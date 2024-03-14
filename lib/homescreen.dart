@@ -30,13 +30,22 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 const Expanded(
                   flex: 15,
-                  child: Text(
-                    'Ready To Type Like A Pro?\nStart Here!',
-                    style: TextStyle(
-                      color: Color(0xFF3D0097),
-                      fontSize: 24,
-                      fontWeight: FontWeight.w600,
-                    ),
+                  child: Stack(
+                    children: [
+                      Center(
+                        child: Image(
+                          image: AssetImage('assets/images/keyboard.png'),
+                        ),
+                      ),
+                      Text(
+                        'Ready TO Type Like A Pro?\nStart Here!',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFF3D0097),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 const Expanded(
