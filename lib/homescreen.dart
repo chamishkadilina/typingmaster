@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Expanded(
-                  flex: 15,
+                  flex: 16,
                   child: Stack(
                     children: [
                       Center(
@@ -89,6 +89,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset(
+                                  'assets/images/keyboard1.png',
+                                  fit: BoxFit.fitHeight,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
@@ -113,6 +125,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                 blurRadius: 20,
                                 spreadRadius: 2,
                                 offset: Offset(7, 7),
+                              ),
+                            ],
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset(
+                                  'assets/images/keyboard2.png',
+                                  fit: BoxFit.fitHeight,
+                                ),
                               ),
                             ],
                           ),
@@ -150,6 +174,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset(
+                                  'assets/images/keyboard3.png',
+                                  fit: BoxFit.fitHeight,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
@@ -174,6 +210,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                 blurRadius: 20,
                                 spreadRadius: 2,
                                 offset: Offset(7, 7),
+                              ),
+                            ],
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset(
+                                  'assets/images/keyboard4.png',
+                                  fit: BoxFit.fitHeight,
+                                ),
                               ),
                             ],
                           ),
