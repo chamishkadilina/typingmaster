@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:typingmaster/homescreen.dart';
+import 'package:typingmaster/home_screen.dart';
 
 void main() {
   runApp(const TypingMaster());
