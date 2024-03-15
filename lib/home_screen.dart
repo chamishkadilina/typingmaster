@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Center(
                         child: Image(
-                          image: AssetImage('assets/images/keyboard.png'),
+                          image: AssetImage('assets/images/welcomeImage.png'),
                         ),
                       ),
                       Text(
