@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:typingmaster/reusable_card.dart';
+import 'package:typingmaster/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,21 +17,21 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFFF0F4FD),
-              Color(0xFFE1DAFB),
+              kBackgroundStartColor,
+              kBackgroundEndColor,
             ],
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
+            begin: kBackgroundColorBeginAlign,
+            end: kBackgroundColorEndAlign,
           ),
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(35, 02, 35, 00),
+            padding: kScreenPadding,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Expanded(
-                  flex: 140,
+                  flex: kKeyboardImageFlex,
                   child: Stack(
                     children: [
                       Center(
@@ -40,29 +41,21 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Text(
                         'Ready TO Type Like A Pro?\nStart Here!',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xFF3D0097),
-                        ),
+                        style: kTitleTextStyle,
                       )
                     ],
                   ),
                 ),
                 const Expanded(
-                  flex: 10,
+                  flex: kChooseModeFlex,
                   child: Text(
                     'Choose a mode',
-                    style: TextStyle(
-                      color: Color(0xFF3D0097),
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: kSecondTitleTextStyle,
                   ),
                 ),
                 //cards
                 Expanded(
-                  flex: 110,
+                  flex: kCardFlex,
                   child: Row(
                     children: [
                       Expanded(
@@ -70,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           imagePath: Image.asset(
                             'assets/images/keyboard1.png',
                           ),
-                          cardMargin: const EdgeInsets.fromLTRB(00, 20, 10, 10),
+                          cardMargin: kCard1Margin,
                           textLable: '1 Min',
                         ),
                       ),
@@ -79,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           imagePath: Image.asset(
                             'assets/images/keyboard2.png',
                           ),
-                          cardMargin: const EdgeInsets.fromLTRB(10, 20, 00, 10),
+                          cardMargin: kCard2Margin,
                           textLable: '2 Min',
                         ),
                       ),
@@ -87,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Expanded(
-                  flex: 110,
+                  flex: kCardFlex,
                   child: Row(
                     children: [
                       Expanded(
@@ -95,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           imagePath: Image.asset(
                             'assets/images/keyboard3.png',
                           ),
-                          cardMargin: const EdgeInsets.fromLTRB(00, 10, 10, 20),
+                          cardMargin: kCard3Margin,
                           textLable: '5 Min',
                         ),
                       ),
@@ -104,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           imagePath: Image.asset(
                             'assets/images/keyboard4.png',
                           ),
-                          cardMargin: const EdgeInsets.fromLTRB(10, 10, 00, 20),
+                          cardMargin: kCard4Margin,
                           textLable: 'Custom',
                         ),
                       ),
@@ -113,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 //Navigation Bar
                 Expanded(
-                  flex: 30,
+                  flex: kNavigationBarFlex,
                   child: Container(
                     margin: const EdgeInsets.only(bottom: 10),
                     decoration: BoxDecoration(

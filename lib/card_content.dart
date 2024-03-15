@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:typingmaster/constants.dart';
 
 class CardContent extends StatelessWidget {
   final String? textlable;
@@ -16,17 +16,17 @@ class CardContent extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 8, top: 8, right: 8, bottom: 2),
+          padding: kImagePadding,
           child: ClipRRect(
             borderRadius: const BorderRadiusDirectional.only(
-              topStart: Radius.circular(8),
-              topEnd: Radius.circular(8),
+              topStart: kBorderRadiusTopStart,
+              topEnd: kBorderRadiusTopEnd,
             ),
             child: imagepath,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 8, top: 6, right: 8, bottom: 0),
+          padding: kContentPadding,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -35,21 +35,15 @@ class CardContent extends StatelessWidget {
                 children: [
                   Text(
                     textlable ?? '',
-                    style: const TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: kCardTextStyle,
                   ),
                   Text(
                     'Practice',
-                    style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black.withOpacity(0.5)),
+                    style: kCardSubTextStyle,
                   ),
                 ],
               ),
-              const Icon(FontAwesomeIcons.angleRight)
+              const Icon(kcardIcon),
             ],
           ),
         ),
