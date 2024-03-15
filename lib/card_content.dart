@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CardContent extends StatelessWidget {
+  final String? textlable;
   final Widget? imagepath;
 
   const CardContent({
+    required this.textlable,
     required this.imagepath,
     super.key,
   });
@@ -23,8 +25,8 @@ class CardContent extends StatelessWidget {
             child: imagepath,
           ),
         ),
-        const Padding(
-          padding: EdgeInsets.only(left: 8, top: 0, right: 8, bottom: 2),
+        Padding(
+          padding: const EdgeInsets.only(left: 8, top: 6, right: 8, bottom: 0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -32,8 +34,8 @@ class CardContent extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '1 Min',
-                    style: TextStyle(
+                    textlable ?? '',
+                    style: const TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),
@@ -41,13 +43,13 @@ class CardContent extends StatelessWidget {
                   Text(
                     'Practice',
                     style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w400,
-                    ),
+                        fontSize: 13,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.black.withOpacity(0.5)),
                   ),
                 ],
               ),
-              Icon(FontAwesomeIcons.angleRight)
+              const Icon(FontAwesomeIcons.angleRight)
             ],
           ),
         ),
