@@ -71,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'assets/images/keyboard1.png',
                           ),
                           cardMargin: const EdgeInsets.fromLTRB(00, 20, 10, 10),
+                          textLable: '1 Min',
                         ),
                       ),
                       Expanded(
@@ -79,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'assets/images/keyboard2.png',
                           ),
                           cardMargin: const EdgeInsets.fromLTRB(10, 20, 00, 10),
+                          textLable: '2 Min',
                         ),
                       ),
                     ],
@@ -94,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'assets/images/keyboard3.png',
                           ),
                           cardMargin: const EdgeInsets.fromLTRB(00, 10, 10, 20),
+                          textLable: '5 Min',
                         ),
                       ),
                       Expanded(
@@ -102,6 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'assets/images/keyboard4.png',
                           ),
                           cardMargin: const EdgeInsets.fromLTRB(10, 10, 00, 20),
+                          textLable: 'Custom',
                         ),
                       ),
                     ],

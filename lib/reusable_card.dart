@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:typingmaster/card_content.dart';
 
 class ReusableCard extends StatelessWidget {
+  final String? textLable;
   final Widget? imagePath;
   final EdgeInsetsGeometry? cardMargin;
 
   const ReusableCard({
+    required this.textLable,
     required this.imagePath,
     required this.cardMargin,
     super.key,
@@ -38,6 +40,7 @@ class ReusableCard extends StatelessWidget {
         ],
       ),
       child: CardContent(
+        textlable: textLable ?? '',
         imagepath: imagePath,
       ),
     );
