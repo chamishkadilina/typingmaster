@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:typingmaster/card_content.dart';
+import 'package:typingmaster/constants.dart';
 
 class ReusableCard extends StatelessWidget {
   final String? textLable;
@@ -19,24 +20,14 @@ class ReusableCard extends StatelessWidget {
       margin: cardMargin,
       decoration: BoxDecoration(
         border: Border.all(
-          width: 0.5,
-          color: Colors.white,
+          width: kBorderWidth,
+          color: kBorderColor,
         ),
-        color: const Color(0xFFDFC8FF),
-        borderRadius: BorderRadius.circular(18.0),
+        color: kCardColor,
+        borderRadius: kborderRadius,
         boxShadow: const [
-          BoxShadow(
-            color: Color.fromRGBO(255, 255, 255, 0.9),
-            blurRadius: 20,
-            spreadRadius: 2,
-            offset: Offset(-7, -7),
-          ),
-          BoxShadow(
-            color: Color.fromRGBO(0, 0, 0, 0.25),
-            blurRadius: 20,
-            spreadRadius: 2,
-            offset: Offset(7, 7),
-          ),
+          kBoxShadowColor1,
+          kBoxShadowColor2,
         ],
       ),
       child: CardContent(
