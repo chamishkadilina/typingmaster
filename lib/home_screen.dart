@@ -25,12 +25,12 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(30, 05, 30, 00),
+            padding: const EdgeInsets.fromLTRB(35, 02, 35, 00),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Expanded(
-                  flex: 16,
+                  flex: 140,
                   child: Stack(
                     children: [
                       Center(
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 const Expanded(
-                  flex: 1,
+                  flex: 10,
                   child: Text(
                     'Choose a mode',
                     style: TextStyle(
@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 //cards
                 Expanded(
-                  flex: 12,
+                  flex: 110,
                   child: Row(
                     children: [
                       Expanded(
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Expanded(
-                  flex: 12,
+                  flex: 110,
                   child: Row(
                     children: [
                       Expanded(
@@ -109,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 //Navigation Bar
                 Expanded(
-                  flex: 4,
+                  flex: 30,
                   child: Container(
                     margin: const EdgeInsets.only(bottom: 10),
                     decoration: BoxDecoration(
