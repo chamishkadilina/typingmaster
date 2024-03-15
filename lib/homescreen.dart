@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:typingmaster/reusable_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -65,81 +66,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Container(
-                          margin: const EdgeInsets.fromLTRB(00, 20, 10, 10),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              width: 0.5,
-                              color: Colors.white,
-                            ),
-                            color: const Color(0xFFDFC8FF),
-                            borderRadius: BorderRadius.circular(18.0),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color.fromRGBO(255, 255, 255, 0.9),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(-7, -7),
-                              ),
-                              BoxShadow(
-                                color: Color.fromRGBO(0, 0, 0, 0.25),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(7, 7),
-                              ),
-                            ],
+                        child: ReusableCard(
+                          imagePath: Image.asset(
+                            'assets/images/keyboard1.png',
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset(
-                                  'assets/images/keyboard1.png',
-                                  fit: BoxFit.fitHeight,
-                                ),
-                              ),
-                            ],
-                          ),
+                          cardMargin: const EdgeInsets.fromLTRB(00, 20, 10, 10),
                         ),
                       ),
                       Expanded(
-                        child: Container(
-                          margin: const EdgeInsets.fromLTRB(10, 20, 00, 10),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              width: 0.5,
-                              color: Colors.white,
-                            ),
-                            color: const Color(0xFFDFC8FF),
-                            borderRadius: BorderRadius.circular(18.0),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color.fromRGBO(255, 255, 255, 0.9),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(-7, -7),
-                              ),
-                              BoxShadow(
-                                color: Color.fromRGBO(0, 0, 0, 0.25),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(7, 7),
-                              ),
-                            ],
+                        child: ReusableCard(
+                          imagePath: Image.asset(
+                            'assets/images/keyboard2.png',
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset(
-                                  'assets/images/keyboard2.png',
-                                  fit: BoxFit.fitHeight,
-                                ),
-                              ),
-                            ],
-                          ),
+                          cardMargin: const EdgeInsets.fromLTRB(10, 20, 00, 10),
                         ),
                       ),
                     ],
@@ -150,81 +89,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Container(
-                          margin: const EdgeInsets.fromLTRB(00, 10, 10, 20),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              width: 0.5,
-                              color: Colors.white,
-                            ),
-                            color: const Color(0xFFDFC8FF),
-                            borderRadius: BorderRadius.circular(18.0),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color.fromRGBO(255, 255, 255, 0.9),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(-7, -7),
-                              ),
-                              BoxShadow(
-                                color: Color.fromRGBO(0, 0, 0, 0.25),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(7, 7),
-                              ),
-                            ],
+                        child: ReusableCard(
+                          imagePath: Image.asset(
+                            'assets/images/keyboard3.png',
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset(
-                                  'assets/images/keyboard3.png',
-                                  fit: BoxFit.fitHeight,
-                                ),
-                              ),
-                            ],
-                          ),
+                          cardMargin: const EdgeInsets.fromLTRB(00, 10, 10, 20),
                         ),
                       ),
                       Expanded(
-                        child: Container(
-                          margin: const EdgeInsets.fromLTRB(10, 10, 00, 20),
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              width: 0.5,
-                              color: Colors.white,
-                            ),
-                            color: const Color(0xFFDFC8FF),
-                            borderRadius: BorderRadius.circular(18.0),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color.fromRGBO(255, 255, 255, 0.9),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(-7, -7),
-                              ),
-                              BoxShadow(
-                                color: Color.fromRGBO(0, 0, 0, 0.25),
-                                blurRadius: 20,
-                                spreadRadius: 2,
-                                offset: Offset(7, 7),
-                              ),
-                            ],
+                        child: ReusableCard(
+                          imagePath: Image.asset(
+                            'assets/images/keyboard4.png',
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset(
-                                  'assets/images/keyboard4.png',
-                                  fit: BoxFit.fitHeight,
-                                ),
-                              ),
-                            ],
-                          ),
+                          cardMargin: const EdgeInsets.fromLTRB(10, 10, 00, 20),
                         ),
                       ),
                     ],
