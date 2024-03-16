@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:typingmaster/constants.dart';
 
 class ReusableCard extends StatelessWidget {
+  final BorderRadiusGeometry? borderRadius;
   final Widget? cardChild;
   final void Function()? onPress;
   final EdgeInsetsGeometry? cardMargin;
 
   const ReusableCard({
+    required this.borderRadius,
     this.cardChild,
     this.onPress,
     this.cardMargin,
@@ -25,7 +27,7 @@ class ReusableCard extends StatelessWidget {
             color: kBorderColor,
           ),
           color: kCardColor,
-          borderRadius: kborderRadius,
+          borderRadius: borderRadius,
           boxShadow: const [
             kBoxShadowColor1,
             kBoxShadowColor2,
