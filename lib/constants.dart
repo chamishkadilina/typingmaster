@@ -9,9 +9,12 @@ const Alignment kHomeBeginAlign = Alignment.topRight;
 const Alignment kHomeEndAlign = Alignment.bottomLeft;
 const Alignment kStartBeginAlign = Alignment.bottomRight;
 const Alignment kStartEndAlign = Alignment.centerLeft;
+const Alignment kPracticeBeginAlign = Alignment.bottomLeft;
+const Alignment kPracticeEndAlign = Alignment.bottomRight;
 
 const kHomeScreenPadding = EdgeInsets.fromLTRB(35, 02, 35, 02);
 const kStartingScreenPadding = EdgeInsets.fromLTRB(35, 08, 35, 02);
+const kPracticeScreenPadding = EdgeInsets.fromLTRB(35, 08, 35, 02);
 
 const int kKeyboardImageFlex = 140;
 const int kChooseModeFlex = 10;
@@ -80,3 +83,13 @@ const BorderRadiusGeometry kRoundedBorder = BorderRadius.all(
 );
 const Color kIconColor = Color(0xFF3D0097);
 const double kIconSize = 30;
+
+///practice_screen constants-----------------------------------------------------
+const Color kTypingSpaceColor = Colors.white;
+const Color kTimeBox = Color(0xFF353535);
+const Color kRefreshIconColor = Color(0xFF8A39FE);
+const Icon kRefreshIcon = Icon(
+  FontAwesomeIcons.arrowsRotate,
+  color: Colors.white,
+  size: 30,
+);
