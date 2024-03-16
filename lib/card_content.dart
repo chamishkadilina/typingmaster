@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:typingmaster/constants.dart';
 
 class CardContent extends StatelessWidget {
-  final String? textlable;
-  final Widget? imagepath;
+  final String? textLable;
+  final Widget? imagePath;
 
   const CardContent({
-    required this.textlable,
-    required this.imagepath,
+    required this.textLable,
+    required this.imagePath,
     super.key,
   });
 
@@ -22,7 +22,7 @@ class CardContent extends StatelessWidget {
               topStart: kBorderRadiusTopStart,
               topEnd: kBorderRadiusTopEnd,
             ),
-            child: imagepath,
+            child: imagePath,
           ),
         ),
         Padding(
@@ -34,7 +34,7 @@ class CardContent extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    textlable ?? '',
+                    textLable ?? '',
                     style: kCardTextStyle,
                   ),
                   Text(

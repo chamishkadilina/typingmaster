@@ -8,7 +8,7 @@ const Color kBackgroundEndColor = Color(0xFFE1DAFB);
 const Alignment kBackgroundColorBeginAlign = Alignment.topRight;
 const Alignment kBackgroundColorEndAlign = Alignment.bottomLeft;
 
-const kScreenPadding = EdgeInsets.fromLTRB(35, 02, 35, 00);
+const kScreenPadding = EdgeInsets.fromLTRB(35, 02, 35, 02);
 
 const int kKeyboardImageFlex = 140;
 const int kChooseModeFlex = 10;
