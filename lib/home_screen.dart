@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:typingmaster/reusable_card.dart';
+import 'package:flutter/widgets.dart';
+import 'package:typingmaster/card_content.dart';
 import 'package:typingmaster/constants.dart';
+import 'package:typingmaster/reusable_card.dart';
+import 'package:typingmaster/starting_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -60,20 +63,38 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Expanded(
                         child: ReusableCard(
-                          imagePath: Image.asset(
-                            'assets/images/keyboard1.png',
-                          ),
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const StartingScreen(),
+                              ),
+                            );
+                          },
                           cardMargin: kCard1Margin,
-                          textLable: '1 Min',
+                          cardChild: CardContent(
+                            textLable: '1 Min',
+                            imagePath:
+                                Image.asset('assets/images/keyboard1.png'),
+                          ),
                         ),
                       ),
                       Expanded(
                         child: ReusableCard(
-                          imagePath: Image.asset(
-                            'assets/images/keyboard2.png',
-                          ),
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const StartingScreen(),
+                              ),
+                            );
+                          },
                           cardMargin: kCard2Margin,
-                          textLable: '2 Min',
+                          cardChild: CardContent(
+                            textLable: '1 Min',
+                            imagePath:
+                                Image.asset('assets/images/keyboard2.png'),
+                          ),
                         ),
                       ),
                     ],
@@ -85,36 +106,54 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Expanded(
                         child: ReusableCard(
-                          imagePath: Image.asset(
-                            'assets/images/keyboard3.png',
-                          ),
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const StartingScreen(),
+                              ),
+                            );
+                          },
                           cardMargin: kCard3Margin,
-                          textLable: '5 Min',
+                          cardChild: CardContent(
+                            textLable: '1 Min',
+                            imagePath:
+                                Image.asset('assets/images/keyboard3.png'),
+                          ),
                         ),
                       ),
                       Expanded(
                         child: ReusableCard(
-                          imagePath: Image.asset(
-                            'assets/images/keyboard4.png',
-                          ),
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const StartingScreen(),
+                              ),
+                            );
+                          },
                           cardMargin: kCard4Margin,
-                          textLable: 'Custom',
+                          cardChild: CardContent(
+                            textLable: '1 Min',
+                            imagePath:
+                                Image.asset('assets/images/keyboard1.png'),
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
-                //Navigation Bar
                 Expanded(
                   flex: kNavigationBarFlex,
                   child: Container(
-                    margin: const EdgeInsets.only(bottom: 10),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF202020),
-                      borderRadius: BorderRadius.circular(100.0),
+                      color: Colors.grey.shade900,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(90),
+                      ),
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),
