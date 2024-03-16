@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:typingmaster/card_content.dart';
 import 'package:typingmaster/constants.dart';
 import 'package:typingmaster/reusable_card.dart';
@@ -23,13 +22,13 @@ class _HomeScreenState extends State<HomeScreen> {
               kBackgroundStartColor,
               kBackgroundEndColor,
             ],
-            begin: kBackgroundColorBeginAlign,
-            end: kBackgroundColorEndAlign,
+            begin: kHomeBeginAlign,
+            end: kHomeEndAlign,
           ),
         ),
         child: SafeArea(
           child: Padding(
-            padding: kScreenPadding,
+            padding: kHomeScreenPadding,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -71,6 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
+                          borderRadius: kborderRadius,
                           cardMargin: kCard1Margin,
                           cardChild: CardContent(
                             textLable: '1 Min',
@@ -89,9 +89,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
+                          borderRadius: kborderRadius,
                           cardMargin: kCard2Margin,
                           cardChild: CardContent(
-                            textLable: '1 Min',
+                            textLable: '2 Min',
                             imagePath:
                                 Image.asset('assets/images/keyboard2.png'),
                           ),
@@ -114,9 +115,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
+                          borderRadius: kborderRadius,
                           cardMargin: kCard3Margin,
                           cardChild: CardContent(
-                            textLable: '1 Min',
+                            textLable: '5 Min',
                             imagePath:
                                 Image.asset('assets/images/keyboard3.png'),
                           ),
@@ -132,9 +134,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
+                          borderRadius: kborderRadius,
                           cardMargin: kCard4Margin,
                           cardChild: CardContent(
-                            textLable: '1 Min',
+                            textLable: 'Custom',
                             imagePath:
                                 Image.asset('assets/images/keyboard1.png'),
                           ),

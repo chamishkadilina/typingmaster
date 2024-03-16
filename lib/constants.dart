@@ -5,10 +5,13 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 const Color kBackgroundStartColor = Color(0xFFF0F4FD);
 const Color kBackgroundEndColor = Color(0xFFE1DAFB);
 
-const Alignment kBackgroundColorBeginAlign = Alignment.topRight;
-const Alignment kBackgroundColorEndAlign = Alignment.bottomLeft;
+const Alignment kHomeBeginAlign = Alignment.topRight;
+const Alignment kHomeEndAlign = Alignment.bottomLeft;
+const Alignment kStartBeginAlign = Alignment.bottomRight;
+const Alignment kStartEndAlign = Alignment.centerLeft;
 
-const kScreenPadding = EdgeInsets.fromLTRB(35, 02, 35, 02);
+const kHomeScreenPadding = EdgeInsets.fromLTRB(35, 02, 35, 02);
+const kStartingScreenPadding = EdgeInsets.fromLTRB(35, 08, 35, 02);
 
 const int kKeyboardImageFlex = 140;
 const int kChooseModeFlex = 10;
@@ -58,7 +61,7 @@ const Color kCardColor = Color(0xFFDFC8FF);
 BorderRadius kborderRadius = BorderRadius.circular(18.0);
 
 const BoxShadow kBoxShadowColor1 = BoxShadow(
-  color: Color.fromRGBO(255, 255, 255, 0.9),
+  color: Color.fromRGBO(255, 255, 255, 1),
   blurRadius: 20,
   spreadRadius: 2,
   offset: Offset(-7, -7),
@@ -70,3 +73,10 @@ const BoxShadow kBoxShadowColor2 = BoxShadow(
   spreadRadius: 2,
   offset: Offset(7, 7),
 );
+
+///start_screen constants--------------------------------------------------------
+const BorderRadiusGeometry kRoundedBorder = BorderRadius.all(
+  Radius.circular(90),
+);
+const Color kIconColor = Color(0xFF3D0097);
+const double kIconSize = 30;
