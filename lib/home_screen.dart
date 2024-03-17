@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:typingmaster/card_content.dart';
 import 'package:typingmaster/constants.dart';
+import 'package:typingmaster/practice_screen.dart';
 import 'package:typingmaster/reusable_card.dart';
-import 'package:typingmaster/starting_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const StartingScreen(),
+                                builder: (context) => const PracticeScreen(),
                               ),
                             );
                           },
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const StartingScreen(),
+                                builder: (context) => const PracticeScreen(),
                               ),
                             );
                           },
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const StartingScreen(),
+                                builder: (context) => const PracticeScreen(),
                               ),
                             );
                           },
@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const StartingScreen(),
+                                builder: (context) => const PracticeScreen(),
                               ),
                             );
                           },
@@ -146,17 +146,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                Expanded(
-                  flex: kNavigationBarFlex,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade900,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(90),
-                      ),
-                    ),
-                  ),
-                ),
+                // Expanded(
+                //   flex: kNavigationBarFlex,
+                //   child: Container(
+                //     decoration: BoxDecoration(
+                //       color: Colors.grey.shade900,
+                //       borderRadius: const BorderRadius.all(
+                //         Radius.circular(90),
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),

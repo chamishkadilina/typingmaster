@@ -7,12 +7,17 @@ const Color kBackgroundEndColor = Color(0xFFE1DAFB);
 
 const Alignment kHomeBeginAlign = Alignment.topRight;
 const Alignment kHomeEndAlign = Alignment.bottomLeft;
-const Alignment kStartBeginAlign = Alignment.bottomRight;
-const Alignment kStartEndAlign = Alignment.centerLeft;
+const Alignment kStaticBeginAlign = Alignment.centerRight;
+const Alignment kStaticEndAlign = Alignment.topLeft;
+const Alignment kAchievementBeginAlign = Alignment.topLeft;
+const Alignment kAcheivementEndAlign = Alignment.bottomRight;
+const Alignment kSettingBeginAlign = Alignment.bottomCenter;
+const Alignment kSettingEndAlign = Alignment.topCenter;
+
 const Alignment kPracticeBeginAlign = Alignment.bottomLeft;
 const Alignment kPracticeEndAlign = Alignment.bottomRight;
 
-const kHomeScreenPadding = EdgeInsets.fromLTRB(35, 02, 35, 02);
+const kHomeScreenPadding = EdgeInsets.fromLTRB(35, 06, 35, 02);
 const kStartingScreenPadding = EdgeInsets.fromLTRB(35, 08, 35, 02);
 const kPracticeScreenPadding = EdgeInsets.fromLTRB(35, 08, 35, 02);
 
@@ -58,7 +63,7 @@ TextStyle kCardSubTextStyle = TextStyle(
 const IconData kcardIcon = FontAwesomeIcons.angleRight;
 
 ///reusable_card constants-------------------------------------------------------
-const double kBorderWidth = 0.5;
+const double kBorderWidth = 0.6;
 const Color kBorderColor = Colors.white;
 const Color kCardColor = Color(0xFFDFC8FF);
 BorderRadius kborderRadius = BorderRadius.circular(18.0);

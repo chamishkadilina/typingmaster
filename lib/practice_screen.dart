@@ -108,17 +108,17 @@ class _PracticeScreenState extends State<PracticeScreen> {
                   height: 8,
                 ),
                 //navigationBar
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade900,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(90),
-                      ),
-                    ),
-                  ),
-                ),
+                // Expanded(
+                //   flex: 2,
+                //   child: Container(
+                //     decoration: BoxDecoration(
+                //       color: Colors.grey.shade900,
+                //       borderRadius: const BorderRadius.all(
+                //         Radius.circular(90),
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),
