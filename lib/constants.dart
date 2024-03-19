@@ -98,3 +98,8 @@ const Icon kRefreshIcon = Icon(
   color: Colors.white,
   size: 30,
 );
+
+const kNormalTextStyle = TextStyle(
+  fontSize: 16,
+  color: Color(0xFF3D0097),
+);

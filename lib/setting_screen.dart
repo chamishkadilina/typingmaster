@@ -24,12 +24,12 @@ class _SettingScreenState extends State<SettingScreen> {
             end: kSettingEndAlign,
           ),
         ),
-        child: const SafeArea(
+        child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.fromLTRB(35, 06, 35, 02),
+            padding: const EdgeInsets.fromLTRB(35, 06, 35, 02),
             child: Column(
               children: [
-                Expanded(
+                const Expanded(
                   flex: 8,
                   child: Center(
                     child: Text(
@@ -38,31 +38,38 @@ class _SettingScreenState extends State<SettingScreen> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Expanded(
-                  flex: 30,
+                const Expanded(
+                  flex: 22,
                   child: ReusableCard(
                     borderRadius: BorderRadius.all(
                       Radius.circular(20),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Expanded(
-                  flex: 90,
+                const Expanded(
+                  flex: 98,
                   child: ReusableCard(
                     borderRadius: BorderRadius.all(
                       Radius.circular(20),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 140,
+                const SizedBox(
+                  height: 128,
                 ),
+                Container(
+                  alignment: Alignment.bottomRight,
+                  child: const Text(
+                    'App Version: V1.0.1',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                )
               ],
             ),
           ),

@@ -42,7 +42,7 @@ class _StaticScreenState extends State<StaticScreen> {
                   height: 20,
                 ),
                 Expanded(
-                  flex: 30,
+                  flex: 28,
                   child: ReusableCard(
                     borderRadius: BorderRadius.all(
                       Radius.circular(20),
@@ -53,7 +53,7 @@ class _StaticScreenState extends State<StaticScreen> {
                   height: 20,
                 ),
                 Expanded(
-                  flex: 30,
+                  flex: 24,
                   child: ReusableCard(
                     borderRadius: BorderRadius.all(
                       Radius.circular(20),
@@ -64,7 +64,7 @@ class _StaticScreenState extends State<StaticScreen> {
                   height: 20,
                 ),
                 Expanded(
-                  flex: 60,
+                  flex: 66,
                   child: ReusableCard(
                     borderRadius: BorderRadius.all(
                       Radius.circular(20),
