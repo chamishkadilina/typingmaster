@@ -3,7 +3,7 @@ import 'package:typingmaster/achievement_screen.dart';
 import 'package:typingmaster/home_screen.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:typingmaster/setting_screen.dart';
-import 'package:typingmaster/static_screen.dart';
+import 'package:typingmaster/dashboard_screen.dart';
 
 class NavigationBar extends StatefulWidget {
   const NavigationBar({super.key});
